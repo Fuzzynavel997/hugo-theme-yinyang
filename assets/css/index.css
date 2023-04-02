@@ -315,7 +315,7 @@ a:hover {
   /* 设置移动端标签样式 */
   .tags-inline a {
     font-size: 12px; /* 调整为适合移动端的字体大小 */
-    padding: 2px 4px; /* 缩小标签内边距 */
+    padding: 2px 3px; /* 缩小标签内边距 */
   }
 }
 
