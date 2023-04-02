@@ -19,14 +19,15 @@
               </div>
               <div class="posts-title col-xs-9 col-sm-10">
                 <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  <div class="col-xs-8 col-sm-8">
+                    <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
                   </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    {{ range .Params.categories }}
-                    <div class="posts-category">
-                      <a href="/categories/{{ lower . }}/"><strong>{{ . }}</strong></a>
-                    </div>
+                  <div class="col-xs-4 col-sm-4 tags-inline">
+                    {{ with .Params.tags }}
+                    
+                    {{ range . }}
+                    <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>
+                    {{ end }}
                     {{ end }}
                   </div>
                 </div>

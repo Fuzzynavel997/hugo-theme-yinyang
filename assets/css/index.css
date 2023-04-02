@@ -280,3 +280,26 @@ a:hover {
     display: none;
   }
 }
+
+.post-title {
+  display: inline-block;
+  font-size: 20px; /* 调整标题文字大小，根据需要修改此值 */
+}
+
+
+.tags-inline {
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.tags-inline a {
+  display: inline-block;
+  margin-left: 5px;
+  border: 3px solid black;
+  padding: 2px 5px;
+  font-family: "bree serif, sans-serif";
+  font-size: 19px;
+  font-weight: bold; /* 添加这一行来使标签文字加粗 */
+}
+
