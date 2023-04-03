@@ -237,21 +237,7 @@ a:hover {
   font-weight: 800;
 }
 
-/* disqus */
 
-#disqus_thread {
-  position: relative;
-}
-
-#disqus_thread:after {
-  content: "";
-  display: block;
-  height: 55px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background: white;
-}
 
 .post-title {
   display: inline-block;
@@ -285,7 +271,7 @@ a:hover {
   font-weight: bold; /* 加粗字体 */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .header-title,
   .header-subtitle,
   .header-items {
@@ -300,7 +286,8 @@ a:hover {
     font-size: 16px;
   }
   .post-title {
-    font-size: 2rem;
+    font-size: 1rem;
+    font-weight: bold; /* 加粗字体 */
   }
   .post-content p {
     letter-spacing: 0.05em;
@@ -309,6 +296,11 @@ a:hover {
 
 @media screen and (max-width: 48em) {
   .posts-category {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tags-inline {
     display: none;
   }
 }
