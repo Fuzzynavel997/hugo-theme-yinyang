@@ -285,7 +285,7 @@ a:hover {
   font-weight: bold; /* 加粗字体 */
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   .header-title,
   .header-subtitle,
   .header-items {
@@ -304,18 +304,6 @@ a:hover {
   }
   .post-content p {
     letter-spacing: 0.05em;
-  }
-
-    /* 调整移动端主页标题字体大小 */
-  .home .post-title {
-      font-size: 14px; /* 调整为适合移动端的字体大小，根据需要更改此值 */
-    }
-  }
-
-  /* 设置移动端标签样式 */
-  .tags-inline a {
-    font-size: 12px; /* 调整为适合移动端的字体大小 */
-    padding: 2px 3px; /* 缩小标签内边距 */
   }
 }
 
