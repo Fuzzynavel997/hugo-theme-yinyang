@@ -303,3 +303,33 @@ a:hover {
   font-size: 2rem; /* 调整字体大小 */
   font-weight: 600; /* 加粗字体 */
 }
+
+
+.opid-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.opid-list li {
+  border-top: 1px solid #b6b6b6;
+  padding: 20px 0;
+}
+
+.opid-time {
+  font-size: 14px;
+  color: #797878;
+}
+
+.opid-text {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.opid-image {
+  margin-top: 10px;
+}
+
+.opid-image img {
+  max-width: 100%;
+}
