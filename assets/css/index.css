@@ -347,7 +347,7 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .bookshelf li {
@@ -368,7 +368,7 @@ body {
 }
 
 .bookshelf .book-title {
-  font-size: 1.0em;
+  font-size: 0.9em;
   font-weight: bold;
   text-align: center;
 }
