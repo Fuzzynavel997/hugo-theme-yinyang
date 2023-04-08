@@ -279,46 +279,12 @@ a:hover {
   font-weight: bold; /* 加粗字体 */
 }
 
-@media screen and (max-width: 767px) {
-  .header-title,
-  .header-subtitle,
-  .header-items {
-    text-align: center;
-  }
-
-  .posts-line {
-    font-size: 16px;
-  }
-
-  .markdown-body {
-    font-size: 16px;
-  }
-  .post-title {
-    font-size: 1rem;
-    width: 155%;
-    font-weight: bold; /* 加粗字体 */
-  }
-  .post-content p {
-    letter-spacing: 0.05em;
-  }
-}
-
-@media screen and (max-width: 48em) {
-  .posts-category {
-    display: none;
-  }
-}
-@media screen and (max-width: 767px) {
-  .tags-inline {
-    display: none;
-  }
-}
 .single-post-title {
   font-family: 'Noto Serif SC', "Bree Serif", sans-serif;
-  font-size: 2rem; /* 调整字体大小 */
-  font-weight: 600; /* 加粗字体 */
-  letter-spacing: 0.07em;
+  font-size: 1.6rem; /* 调整字体大小 */
+  font-weight: 800; /* 加粗字体 */
 }
+
 
 
 .opid-list {
@@ -421,3 +387,80 @@ th {
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
+
+
+
+
+/* 媒体查询样式 */
+@media screen and (max-width: 767px) {
+  .header-title,
+  .header-items {
+    text-align: center;
+  }
+
+  .posts-line {
+    font-size: 16px;
+  }
+
+  .single-post-title {
+    font-family: 'Noto Serif SC', "Bree Serif", sans-serif;
+    font-size: 1.2rem; /* 调整字体大小 */
+    font-weight: 800; /* 加粗字体 */
+  }
+  
+
+  .markdown-body {
+    font-size: 1em;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .post-title {
+    font-size: 1rem;
+    width: 150%;
+    font-weight: bold; /* 加粗字体 */
+  }
+  .post-content p {
+    letter-spacing: 0.05em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .posts-category {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tags-inline {
+    display: none;
+  }
+}
+
+/* 媒体查询：在较小的屏幕上调整 .bookshelf li 的宽度 */
+@media screen and (max-width: 767px) {
+  .bookshelf li {
+    width: calc(25% - 20px);
+  }
+}
+
+  /* 在较小的屏幕上调整 opid-text 的字体大小 */
+  .opid-text {
+    font-size: 16px;
+  }
+
+  /* 在较小的屏幕上调整 opid-image img 的宽度 */
+  .opid-image img {
+    max-width: 95%;
+  }
+
+  /* 在较小的屏幕上调整 .book-title, .book-date 和 .rating 的字体大小 */
+  .bookshelf .book-title,
+  .bookshelf .book-date,
+  .bookshelf .rating {
+    font-size: 0.8em;
+  }
+
+  /* 在较小的屏幕上调整表格中的文字大小 */
+  table {
+    font-size: 0.9em;
+  }
