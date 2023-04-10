@@ -128,12 +128,6 @@ a:hover {
   min-height: 600px;
 }
 
-.post-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  width: 150%;
-}
-
 .posts-line {
   font-size: 1.2rem;
   margin: 12px 0;
@@ -186,7 +180,8 @@ a:hover {
   font-size: 1.3rem;
   display: inline-block;
   font-weight: 700;
-  letter-spacing: 0.05em
+  letter-spacing: 0.05em;
+  width: 150%;
 }
 
 .post-tags {
@@ -257,7 +252,7 @@ a:hover {
 .single-post-title {
   font-family: 'Noto Serif SC', "Bree Serif", sans-serif;
   font-size: 1.6rem; /* 调整字体大小 */
-  font-weight: 800; /* 加粗字体 */
+  font-weight: 700; /* 加粗字体 */
 }
 
 
@@ -296,6 +291,10 @@ a:hover {
   font-size: 2rem;
 }
 
+strong, b {
+  font-weight: bold;
+}
+
 
 
 body {
@@ -330,7 +329,7 @@ body {
 
 .bookshelf .book-title {
   font-size: 0.9em;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -394,7 +393,7 @@ tr:nth-child(even) {
   .single-post-title {
     font-family: 'Noto Serif SC', "Bree Serif", sans-serif;
     font-size: 1.2rem; /* 调整字体大小 */
-    font-weight: 800; /* 加粗字体 */
+    font-weight: 700; /* 加粗字体 */
   }
   
 
@@ -404,9 +403,9 @@ tr:nth-child(even) {
     margin-right: 0.5rem;
   }
   .post-title {
-    font-size: 1rem;
+    font-size: 1.1rem;
     width: 150%;
-    font-weight: bold; /* 加粗字体 */
+    font-weight: 700; /* 加粗字体 */
   }
   .post-content p {
     letter-spacing: 0.05em;
@@ -499,6 +498,7 @@ tr:nth-child(even) {
   }
   
   .tag-navbar-item {
+    font-family: 'Noto Serif SC', "Bree Serif", sans-serif;
     display: inline-block;
     padding: 5px 10px;
     margin: 10px 5px 5px; /* 增加左右和上下的 margin */
@@ -513,4 +513,3 @@ tr:nth-child(even) {
     color: #333;
   }
   
-
