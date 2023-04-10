@@ -113,7 +113,7 @@ a:hover {
 
 .header-line {
   width: 100%;
-  border-width: 2px;
+  border-width: 1px;
   border-color: #482936;
   border-style: solid none none none;
 }
@@ -124,13 +124,14 @@ a:hover {
 
 /* posts list */
 
-.posts-list {
+#posts-list {
   min-height: 600px;
 }
 
 .post-title {
   font-size: 1.2rem;
   font-weight: bold;
+  width: 150%;
 }
 
 .posts-line {
@@ -291,6 +292,7 @@ a:hover {
 }
 
 .taxonomy-term {
+  font-family: 'Noto Serif SC', "Bree Serif", sans-serif;
   font-size: 2rem;
 }
 
@@ -370,6 +372,15 @@ tr:nth-child(even) {
 
 
 /* 媒体查询样式 */
+
+@media screen and (max-width: 767px) {
+  .page-content {
+    margin-left: 1rem; /* 设置左边距 */
+    margin-right: 1rem; /* 设置右边距 */
+  }
+}
+
+
 @media screen and (max-width: 767px) {
   .header-title,
   .header-items {
@@ -400,7 +411,9 @@ tr:nth-child(even) {
   .post-content p {
     letter-spacing: 0.05em;
   }
+  
 }
+
 
 @media screen and (max-width: 767px) {
   .posts-category {
@@ -481,15 +494,15 @@ tr:nth-child(even) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px 0 10px; /* 增加顶部 padding 和减小底部 padding */
-    margin-bottom: 40px; /* 增加底部 margin */
+    padding: 20px 0 0; /* 增加顶部 padding 和减小底部 padding */
+    margin-bottom: 0px; /* 增加底部 margin */
   }
   
   .tag-navbar-item {
     display: inline-block;
     padding: 5px 10px;
     margin: 10px 5px 5px; /* 增加左右和上下的 margin */
-    border: 3px solid #333;
+    border: 1px solid #f1f1f1;
     border-radius: 10px;
     text-decoration: none;
     color: #333;
