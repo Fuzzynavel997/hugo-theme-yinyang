@@ -1,0 +1,7 @@
+<div class="tag-navbar">
+    {{ $allTags := .Site.Taxonomies.tags }}
+    {{ range $tagName, $tagItems := $allTags }}
+    <a href="{{ $.Site.BaseURL }}tags/{{ $tagName | urlize }}" class="tag-navbar-item">{{ $tagName }}</a>
+    {{ end }}
+  </div>
+  

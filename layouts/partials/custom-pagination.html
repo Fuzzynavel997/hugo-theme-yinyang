@@ -1,0 +1,27 @@
+{{ $total := .Paginator.TotalPages }}
+{{ if gt $total 1 }}
+  <nav class="pagination">
+    {{ if .Paginator.HasPrev }}
+    <a href="{{ .Paginator.Prev.URL }}" class="pagination-item">&lsaquo;</a>
+    {{ end }}
+    {{ $ellipsed := false }}
+    {{ $shouldEllipse := false }}
+    {{ range .Paginator.Pagers }}
+      {{ $right := sub .PageNumber 1 }}
+      {{ $left := sub $total .PageNumber }}
+      {{ if or (le .PageNumber 3) (le $right 3) (le $left 3) }}
+        {{ if $shouldEllipse }}
+          {{ $shouldEllipse = false }}
+          {{ $ellipsed = true }}
+          <span class="pagination-item pagination-ellipsis">…</span>
+        {{ end }}
+        <a href="{{ .URL }}" class="pagination-item{{ if eq .PageNumber $.Paginator.PageNumber }} pagination-item-active{{ end }}">{{ .PageNumber }}</a>
+      {{ else if not $ellipsed }}
+        {{ $shouldEllipse = true }}
+      {{ end }}
+    {{ end }}
+    {{ if .Paginator.HasNext }}
+    <a href="{{ .Paginator.Next.URL }}" class="pagination-item">&rsaquo;</a>
+    {{ end }}
+  </nav>
+{{ end }}
