@@ -6,6 +6,7 @@ body {
   font-family: 'Noto Serif SC', "Bree Serif", sans-serif;
 }
 
+
 body:lang(en) {
   font-family: "Bree Serif", sans-serif;
 }
@@ -40,6 +41,11 @@ a:hover {
   font-family: 'Noto Serif SC', serif;
   letter-spacing: 0.05em;
   max-width: 100%;
+  text-align: justify;
+  text-justify: ideographic;
+  margin-bottom: 1em;
+  word-wrap: break-word;
+  text-shadow: 0 0 1.25px #808080;
 }
 
 .markdown-body a {
@@ -214,9 +220,11 @@ a:hover {
 .post-content p {
   hyphens: auto;
   line-height: 1.8;
-  /* text-align: justify; */
+  text-align: justify;
   text-justify: ideographic;
   margin-bottom: 1em;
+  word-wrap: break-word;
+  text-shadow: 0 0 1.25px #808080;
 }
 
 .related-content {
@@ -252,7 +260,8 @@ a:hover {
 .single-post-title {
   font-family: 'Noto Serif SC', "Bree Serif", sans-serif;
   font-size: 1.6rem; /* 调整字体大小 */
-  font-weight: 700; /* 加粗字体 */
+  font-weight: 900; /* 加粗字体 */
+  text-shadow: 0 0 1.25px #808080;
 }
 
 
@@ -379,6 +388,12 @@ tr:nth-child(even) {
   }
 }
 
+@media screen and (max-width: 767px) {
+  body {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .header-title,
@@ -394,6 +409,7 @@ tr:nth-child(even) {
     font-family: 'Noto Serif SC', "Bree Serif", sans-serif;
     font-size: 1.2rem; /* 调整字体大小 */
     font-weight: 700; /* 加粗字体 */
+    text-shadow: 0 0 1.25px gray
   }
   
 
